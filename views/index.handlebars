@@ -8,7 +8,7 @@
 <ul class="text-center burger">
   {{#each cats}}
     {{#unless devour}}
-      {{> cats/cat-block sleep=true}}
+      {{> cats/cat-block devour=true}}
     {{/unless}}
   {{/each}}
 </ul>
@@ -19,7 +19,7 @@
   <ul>
   {{#each cats}}
     {{#if devour}}
-      {{> cats/cat-block sleep=false}}
+      {{> cats/cat-block devour=false}}
     {{/if}}
   {{/each}}
 </ul>
