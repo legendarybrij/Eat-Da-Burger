@@ -7,7 +7,7 @@
 
 <ul class="text-center burger">
   {{#each cats}}
-    {{#unless sleepy}}
+    {{#unless devour}}
       {{> cats/cat-block sleep=true}}
     {{/unless}}
   {{/each}}
@@ -18,7 +18,7 @@
   <h2 class="text-center">Devour it!</h2>
   <ul>
   {{#each cats}}
-    {{#if sleepy}}
+    {{#if devour}}
       {{> cats/cat-block sleep=false}}
     {{/if}}
   {{/each}}
@@ -36,12 +36,6 @@
 
   <div>
     <h5>Enter the burger you want to eat and Click the "Add burger" button</h5>
-  </div>
-
-  <div class="form-group">
-    <label for="slee">What do want to do?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Devour it!<br>
-    <input type="radio" name="sleepy" value="0"> Add To the List
   </div>
 
   <button type="submit">Add Burger</button>

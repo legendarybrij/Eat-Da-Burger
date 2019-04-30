@@ -8,7 +8,7 @@ $(function() {
     var newSleep = $(this).data("newsleep");
 
     var newSleepState = {
-      sleepy: newSleep
+      devour: newSleep
     };
 
     // Send the PUT request.
@@ -30,7 +30,7 @@ $(function() {
 
     var newCat = {
       burger_name: $("#ca").val().trim(),
-      sleepy: $("[name=sleepy]:checked").val().trim()
+      devour: 0
     };
 
     // Send the POST request.
@@ -45,4 +45,12 @@ $(function() {
       }
     );
   });
+
+  // $(".change-sleep").on("click", function(event) {
+  //   console.log(event.currentTarget.dataset.id);
+
+  // });
+
+
+
 });
