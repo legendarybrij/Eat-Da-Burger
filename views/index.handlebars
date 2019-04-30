@@ -6,9 +6,9 @@
   <h2 class="text-center">List of burgers!</h2>
 
 <ul class="text-center burger">
-  {{#each cats}}
+  {{#each burgers}}
     {{#unless devour}}
-      {{> cats/cat-block devour=true}}
+      {{> burgers/burger-block devour=true}}
     {{/unless}}
   {{/each}}
 </ul>
@@ -17,9 +17,9 @@
 <div class="col-md-4">
   <h2 class="text-center">Devour it!</h2>
   <ul>
-  {{#each cats}}
+  {{#each burgers}}
     {{#if devour}}
-      {{> cats/cat-block devour=false}}
+      {{> burgers/burger-block devour=false}}
     {{/if}}
   {{/each}}
 </ul>
