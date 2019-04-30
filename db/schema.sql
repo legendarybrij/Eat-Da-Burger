@@ -10,3 +10,6 @@ CREATE TABLE cats
 	sleepy BOOLEAN DEFAULT false,
 	PRIMARY KEY (id)
 );
+
+USE cat_db;
+select * from cat_db;
