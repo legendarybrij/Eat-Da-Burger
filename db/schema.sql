@@ -12,20 +12,4 @@ CREATE TABLE burgers (
     PRIMARY KEY (id)
 );
 
-USE burgers_db;
-CREATE TABLE todos(
-    id INT AUTO_INCREMENT NOT NULL,
-    description VARCHAR(255),
-    createdAt TIMESTAMP NOT NULL,
-    PRIMARY KEY(id)
-);
 
-USE burgers_db;
-
-
-INSERT INTO burgers (burger_name,sleepy) VALUES ('Cheese Burger', FALSE);
-INSERT INTO burgers (burger_name, sleepy) VALUES ('Hamburger', FALSE);
-INSERT INTO burgers (burger_name, sleepy) VALUES ('Pizza Burger', FALSE);
-
-USE burgers_db;
-select * from burgers;
