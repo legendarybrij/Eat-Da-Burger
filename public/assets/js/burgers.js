@@ -19,7 +19,7 @@ $(function() {
       function() {
         console.log("changed devour to", newdevour);
         // Reload the page to get the updated list
-        location.reload();
+       location.reload();
       }
     );
   });
@@ -41,14 +41,19 @@ $(function() {
       function() {
         console.log("created new burger");
         // Reload the page to get the updated list
-        location.reload();
+       location.reload();
       }
     );
   });
 
   // $(".change-devour").on("click", function(event) {
-  //   console.log(event.currentTarget.dataset.id);
+  //   var pic = "<img>";
+  //   var message = "<div>";
 
+  //   $(pic).appendTo("#uploadPic");
+  //   $(pic).attr("src", "/assets/img/eatburger.gif");
+  //   $(message).appendTo("#uploadPic");
+  //   $(message).text("hello people");
   // });
 
 
